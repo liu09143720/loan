@@ -52,7 +52,7 @@ public class Member {
 
 	public Loan FindCurrentLoanFor(Book book) {
 		 for(Loan tmp:Loans){
-	            if(tmp.getBook().getISBN().equals(book.getISBN())){
+	            if(tmp.getBook().getId().equals(book.getId())){
 	        		return tmp;	
 	            }
 	        }
